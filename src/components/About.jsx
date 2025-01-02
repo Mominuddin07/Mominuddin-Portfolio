@@ -50,7 +50,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-gray-200 text-[17px] max-w-3xl leading-[30px]"
       >
-        Software Developer with expertise in JavaScript, Python and Java. Proficient in React, Node.js, MongoDB, MySQL, Firebase, AWS, and IBM Cloud. Experienced in using version control with Git, cloud platforms like Firebase, and deploying applications to production environments. Skilled in designing and building end-to-end solutions, turning complex requirements into practical applications. Passionate about continuous learning and contributing to innovative projects, seeking an opportunity to grow and contribute within a forward-thinking technology company.
+        FullStack AI Developer with expertise in JavaScript, Python and Java. Proficient in React, Node.js, MongoDB, MySQL, Firebase, AWS, and IBM Cloud. Experienced in using version control with Git, cloud platforms like Firebase, and deploying applications to production environments. Skilled in designing and building end-to-end solutions, turning complex requirements into practical applications. Passionate about continuous learning and contributing to innovative projects, seeking an opportunity to grow and contribute within a forward-thinking technology company.
       </motion.p>
     </>
   );
