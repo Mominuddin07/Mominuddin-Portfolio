@@ -43,7 +43,7 @@ const StarsCanvass = () => (
   <div
     className="w-screen h-screen fixed inset-0 z-[-1]"
     style={{
-      backgroundColor: "yellow", // Add fallback color
+      backgroundColor: "black", // Add fallback color
     }}
   >
     <Canvas
