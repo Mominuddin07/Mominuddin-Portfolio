@@ -40,13 +40,25 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvass = () => (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
-        <Canvas camera={{position: [0, 0, 1]}}>
-        <Suspense fallback={null}>
-            <StarBackground />
-        </Suspense>
-        </Canvas>
-    </div>
-)
+  <div
+    className="w-screen h-screen fixed inset-0 z-[-1]"
+    style={{
+      backgroundColor: "black", // Add fallback color
+    }}
+  >
+    <Canvas
+      camera={{ position: [0, 0, 1] }}
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <Suspense fallback={null}>
+        <StarBackground />
+      </Suspense>
+    </Canvas>
+  </div>
+);
+
 
 export default StarsCanvass;
