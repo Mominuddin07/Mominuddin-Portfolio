@@ -1,5 +1,4 @@
 import React from "react";
-import { BallCanvas } from "./canvas";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { technologies } from "../constants";
 
@@ -11,20 +10,16 @@ const Tech = () => {
       </h2>
 
       <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10">
-        {technologies.map((technology, index) => (
-          <div
+        {technologies.map((technology) => (
+          <div 
+            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center bg-gray-800 rounded-full"
             key={technology.name}
-            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center"
           >
-            {index < 5 ? (
-              // Display first 5 technologies as Three.js balls
-              <BallCanvas icon={technology.icon} />
-            ) : (
-              // Display other technologies as normal icons in gray circles
-              <div className="w-full h-full bg-gray-800 rounded-full flex items-center justify-center p-3">
-                <img src={technology.icon} alt={technology.name} className="w-3/4 h-3/4 object-contain" />
-              </div>
-            )}
+            <img 
+              src={technology.icon} 
+              alt={technology.name} 
+              className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+            />
           </div>
         ))}
       </div>
