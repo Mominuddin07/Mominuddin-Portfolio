@@ -38,6 +38,8 @@ import jobit from "./jobit.png";
 import healthcoachs from "./healthcoachs.png"
 import amazonclone from "./amazonclone.png";
 
+import investsmart from "./investsmart.png";
+
 export {
   logo,
   backend,
@@ -64,6 +66,7 @@ export {
   linux,
   java,
   firebase,
+  investsmart,
   bootstrap,
   meta,
   amazonclone,

@@ -22,6 +22,7 @@ import {
     java,
     bootstrap,
     firebase,
+    investsmart,
   } from "../assets";
   
   export const navLinks = [
@@ -246,6 +247,27 @@ import {
       ],
       image: amazonclone,
       source_code_link: "https://github.com/Mominuddin07/Amazon-Clone",
+    },
+    {
+      name: "InvestSmart",
+      description:
+        "InvestSmart is a React-based web app that provides real-time market data through a dashboard. It uses Tailwind for design and Firebase for the backend and APIs, helping users track trends and prices easily.",
+      tags: [
+        {
+          name: "React JS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tradingview",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: investsmart,
+      source_code_link: "https://github.com/Mominuddin07/InvestSmart",
     },
   ];
   
