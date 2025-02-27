@@ -1,18 +1,16 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = () => {
   const ref = useRef();
-  const [positions, setPositions] = useState([]);
 
-  useEffect(() => {
-    const generatedPositions = random.inSphere(new Float32Array(5000 * 3), { radius: 1.5 });
-    console.log("Generated Positions:", generatedPositions); // Debugging
-    setPositions(generatedPositions);
+  // Generate positions once using useMemo for better performance
+  const positions = useMemo(() => {
+    return random.inSphere(new Float32Array(5000 * 3), { radius: 1.5 });
   }, []);
 
   useFrame((_, delta) => {
@@ -39,7 +37,7 @@ const Stars = () => {
         <PointMaterial
           transparent
           color="#ffffff"
-          size={0.002} // Increased size
+          size={0.002} // Adjust to make stars visible
           sizeAttenuation
           depthWrite={false}
         />
@@ -49,12 +47,27 @@ const Stars = () => {
 };
 
 const StarsCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768); // Detect mobile screens
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <div className="w-full h-screen fixed inset-0 z-[-1]" style={{ backgroundColor: "black" }}>
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Stars />
-        <Preload all />
-      </Canvas>
+      {!isMobile && (
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Stars />
+          <Preload all />
+        </Canvas>
+      )}
     </div>
   );
 };
