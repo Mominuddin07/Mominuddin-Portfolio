@@ -39,6 +39,8 @@ import healthcoachs from "./healthcoachs.png"
 import amazonclone from "./amazonclone.png";
 
 import investsmart from "./investsmart.png";
+import sensory from "./sensory.png";
+
 
 export {
   logo,
@@ -76,5 +78,6 @@ export {
   coderscave,
   ibmskillbuild,
   jobit,
+  sensory,
   
 };

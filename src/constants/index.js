@@ -23,6 +23,7 @@ import {
     bootstrap,
     firebase,
     investsmart,
+    sensory
   } from "../assets";
   
   export const navLinks = [
@@ -150,8 +151,8 @@ import {
       iconBg: "#E6DEDD",
       date: "July 2024 - Aug 2024",
       points: [
-        "Implemented a responsive “Health Coach” website for exercises, diet plans, and nutrition plans.",
-        "Supervised the integration of “IBM Cloud” and “IBM Watson Assistant” to implement an intelligent chatbot that allows users to traverse our website.",
+        "Implemented a responsive Health Coach website for exercises, diet plans, and nutrition plans.",
+        "Supervised the integration of IBM Cloud and IBM Watson Assistant to implement an intelligent chatbot that allows users to traverse our website.",
         "Created an aesthetically pleasing appearance by designing organized sections.",
       ],
     },
@@ -202,6 +203,7 @@ import {
           name: "IBM Watson",
           color: "pink-text-gradient",
         },
+        
       ],
       image: healthcoachs,
       source_code_link: "https://github.com/Mominuddin07/Health-Coach",
@@ -228,25 +230,25 @@ import {
       source_code_link: "https://github.com/Mominuddin07/CryptoTrack?tab=readme-ov-file",
     },
     {
-      name: "Amazon Clone",
+      name: "Sensory Semiotics",
       description:
-        "A minimalistic Amazon front-end replica focusing on design and user interface. It allows users to browse through a variety of products, showcasing a clean and modern layout. The website features a fully responsive design, ensuring seamless interaction across different devices.",
+        "Sensory Semiotics is a real-time text-to-sign language translation platform designed to enhance communication with the deaf community. It uses React.js, Tailwind CSS, Three.js to deliver smooth performance, 3D gesture rendering.",
       tags: [
         {
           name: "Java Script",
           color: "blue-text-gradient",
         },
         {
-          name: "HTML",
+          name: "Tailwind CSS",
           color: "green-text-gradient",
         },
         {
-          name: "CSS",
+          name: "React JS",
           color: "pink-text-gradient",
         },
       ],
-      image: amazonclone,
-      source_code_link: "https://github.com/Mominuddin07/Amazon-Clone",
+      image: sensory,
+      source_code_link: "https://github.com/Mominuddin07/Sensory-Semiotics",
     },
     {
       name: "InvestSmart",
@@ -269,6 +271,28 @@ import {
       image: investsmart,
       source_code_link: "https://github.com/Mominuddin07/InvestSmart",
     },
+    {
+      name: "Amazon Clone",
+      description:
+        "A minimalistic Amazon front-end replica focusing on design and user interface. It allows users to browse through a variety of products, showcasing a clean and modern layout. The website features a fully responsive design.",
+      tags: [
+        {
+          name: "Java Script",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: amazonclone,
+      source_code_link: "https://github.com/Mominuddin07/Amazon-Clone",
+    },
+    
   ];
   
   export { services, technologies, experiences, projects };
