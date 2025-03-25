@@ -40,7 +40,7 @@ import amazonclone from "./amazonclone.png";
 
 import investsmart from "./investsmart.png";
 import sensory from "./sensory.png";
-
+import ayurva from "./ayurva.png"
 
 export {
   logo,
@@ -79,5 +79,6 @@ export {
   ibmskillbuild,
   jobit,
   sensory,
+  ayurva
   
 };

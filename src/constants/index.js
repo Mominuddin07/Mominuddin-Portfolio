@@ -23,7 +23,8 @@ import {
     bootstrap,
     firebase,
     investsmart,
-    sensory
+    sensory,
+    ayurva
   } from "../assets";
   
   export const navLinks = [
@@ -208,27 +209,7 @@ import {
       image: healthcoachs,
       source_code_link: "https://github.com/Mominuddin07/Health-Coach",
     },
-    {
-      name: "CryptoTrack",
-      description:
-        "CryptoTracker is a React-based web application designed to provide users with real-time cryptocurrency data, empowering them to track market trends, prices.The project leverages modern web technologies and APIs, offering an intuitive interface and a sleek design for seamless user experience.",
-      tags: [
-        {
-          name: "React JS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Material UI",
-          color: "green-text-gradient",
-        },
-        {
-          name: "CoinGeckoApi",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/Mominuddin07/CryptoTrack?tab=readme-ov-file",
-    },
+    
     {
       name: "Sensory Semiotics",
       description:
@@ -271,6 +252,49 @@ import {
       image: investsmart,
       source_code_link: "https://github.com/Mominuddin07/InvestSmart",
     },
+    {
+      name: "CryptoTrack",
+      description:
+        "CryptoTracker is a React-based web application designed to provide users with real-time cryptocurrency data, empowering them to track market trends, prices.The project leverages modern web technologies and APIs, offering an intuitive interface.",
+      tags: [
+        {
+          name: "React JS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Material UI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CoinGeckoApi",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/Mominuddin07/CryptoTrack?tab=readme-ov-file",
+    },
+    {
+      name: " ARYUVA ",
+      description:
+        "ARYUVA Pvt Ltd is a pioneering startup dedicated to transforming the agricultural sector through innovative Internet of Things (IoT) applications. The website was created using Bootstrap 5 for responsive and modern design.",
+      tags: [
+        {
+          name: "Java Script",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Bootstrap 5",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ayurva,
+      source_code_link: "https://github.com/Mominuddin07/Aryuva-Project",
+    },
+    
     {
       name: "Amazon Clone",
       description:
