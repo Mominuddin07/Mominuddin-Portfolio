@@ -24,7 +24,8 @@ import {
     firebase,
     investsmart,
     sensory,
-    ayurva
+    ayurva,
+    aryuva_agritech_logo
   } from "../assets";
   
   export const navLinks = [
@@ -118,6 +119,19 @@ import {
   
   const experiences = [
 
+    {
+      title: "Software Developer",
+      company_name: "ARYUVA Pvt Ltd",
+      icon: aryuva_agritech_logo,
+      iconBg: "#c0bda5",
+      date: "May 2023 - Apr 2024",
+      points: [
+        "Collaborated with employees and internal teams to analyze requirements and decide on technical approaches the company’s digital solutions. ",
+        "Contributed to the design and development of a responsive company website, integrating features like team member profiles and an interactive contact form.",
+        "Assisted in decision making for UI/UX improvements, technology stack selection, and performance optimization, ensuring scalability and maintainability.",
+        "Gained hands on exposure to software development practices, including code reviews, version control, and cross team communications.",
+      ],
+    },
     {
       title: "Java Developer",
       company_name: "Coders Cave",

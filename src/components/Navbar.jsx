@@ -65,13 +65,13 @@ const Navbar = () => {
             </li>
           ))}
           <li className="text-white hover:text-secondary text-[18px] font-medium cursor-pointer">
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1UKq-5gRzeIAksNoeH2feFziiOfoXiUZi/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
               Resume
-            </a>
+            </a> */}
           </li>
         </ul>
 

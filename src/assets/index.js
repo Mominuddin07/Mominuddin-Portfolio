@@ -40,7 +40,8 @@ import amazonclone from "./amazonclone.png";
 
 import investsmart from "./investsmart.png";
 import sensory from "./sensory.png";
-import ayurva from "./ayurva.png"
+import ayurva from "./ayurva.png";
+import aryuva_agritech_logo from "./company/aryuva_agritech_logo.jpeg"
 
 export {
   logo,
@@ -79,6 +80,7 @@ export {
   ibmskillbuild,
   jobit,
   sensory,
-  ayurva
+  ayurva,
+  aryuva_agritech_logo
   
 };
