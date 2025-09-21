@@ -1,6 +1,4 @@
-<h1 align="center">
-    <img alt="portfolio" title="#About" src="./src/assets/bannerportfolio.png" />
-</h1>
+
 
 <h1 align="center">
   <a href="https://mohammedmominuddin.netlify.app/"> Mohammed Mominuddin Portfolio ⚡️</a>
